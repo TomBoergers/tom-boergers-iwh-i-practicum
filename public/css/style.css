@@ -1,58 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body, * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin: 1rem;
-}
-
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
-}
-
-.card__email {
-    font-size: 1rem;
-}
-
-.form-wrapper {
-    font-size: 18px;
-    max-width: 768px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
-}
-
-label, input {
-    margin-top: 5px;
-    display: block;
-    font-size: inherit;
-}
-
-input[type="text"] {
-    padding: .25rem;
-}
-
-input[type="submit"] {
-    background-color: lightgrey;
-    border: none;
-    padding: .375rem 1rem;
-    margin-top: 10px;
-}
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7fa; color: #243649; font: 16px/1.6 system-ui, sans-serif; }
+main { max-width: 960px; margin: 48px auto; padding: 32px; background: white; border: 1px solid #dce4eb; border-radius: 12px; }
+h1 { margin-bottom: 8px; }
+a { color: #176175; }
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; margin-top: 24px; border-collapse: collapse; text-align: left; }
+caption { text-align: left; padding: 8px 0; }
+th, td { padding: 14px; border-bottom: 1px solid #dce4eb; }
+th { background: #edf4f6; }
+form { max-width: 540px; }
+label { display: block; margin: 18px 0 5px; font-weight: 600; }
+input { width: 100%; padding: 10px; border: 1px solid #8b9aaa; border-radius: 5px; font: inherit; }
+button { margin-top: 24px; padding: 11px 20px; border: 0; border-radius: 5px; background: #176175; color: white; font: inherit; cursor: pointer; }
+button:hover { background: #104b5b; }
+:focus-visible { outline: 3px solid #df7c20; outline-offset: 3px; }
+.error { padding: 12px; border-left: 4px solid #b42318; background: #fff1f0; }
+@media (max-width: 600px) { main { margin: 16px; padding: 20px; } }

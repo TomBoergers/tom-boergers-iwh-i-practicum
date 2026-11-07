@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        main
+            a(href="/update-cobj") Add to this table
+            h1 Workshops
+            p Workshop records from the HubSpot developer test account.
+            .table-wrapper
+                table
+                    caption Workshop names, topics, and capacities
+                    thead
+                        tr
+                            th(scope="col") Name
+                            th(scope="col") Topic
+                            th(scope="col") Capacity
+                    tbody
+                        each record in records
+                            tr
+                                td= record.properties.name
+                                td= record.properties.topic
+                                td= record.properties.capacity
+                        else
+                            tr
+                                td(colspan="3") No workshops yet. Add the first workshop using the link above.
